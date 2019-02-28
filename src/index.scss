@@ -1,0 +1,88 @@
+$bgColorMenu: #191c24;
+$bgColorMenuOnClick: #2a2d37;
+$textColorMenu: #fff;
+$textColorMenuOnClickAndExit: #808592;
+$bgColorMain: #f7f8f8;
+$bgColorFooter: #373c43;
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local("OpenSans"),
+    url('./fonts/OpenSans-Bold.ttf') format('truetype');
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 1000px;
+  background: black;
+  margin: auto;
+}
+/* Левая часть страницы, меню*/
+.menu {
+  background: $bgColorMenu;
+  margin-left: 20px;
+  width: 320px;
+  height: 380px;
+  font-family: "OpenSans";
+  font-size: 24px;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu__item {
+  padding-left: 20px;
+  height: 76px;
+  line-height: 76px;
+}
+
+.menu__item a {
+  text-decoration: none;
+  color: $textColorMenu;
+}
+
+.menu__item_payment {
+  background: $bgColorMenuOnClick;
+}
+
+.menu__item_payment a, .menu__item_exit a {
+  color: $textColorMenuOnClickAndExit;
+}
+/* конец: Левая часть страницы, меню*/
+/* основная часть*/
+.main {
+  width: 640px;
+  margin-right: 20px;
+}
+
+.main__data {
+  background: $bgColorMain;
+  height: 570px;
+}
+/* конец: основная часть*/
+/*footer*/
+.main__footer {
+  background: $bgColorFooter;
+  height: auto;
+  padding: 20px;
+  font-family: Arial;
+  font-size: 16px;
+  color: #89909d;
+}
+
+.main__footer p {
+  margin: 10px 10px;
+}
+/*конец: footer*/

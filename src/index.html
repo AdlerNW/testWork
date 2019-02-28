@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="menu"> <!--левый блок с меню-->
+      <ul>
+        <li class="menu__item menu__item_lk"><a href="#">Личный кабинет</a></li>
+        <li class="menu__item menu__item_payment"><a href="#">Платежи</a></li>
+        <li class="menu__item menu__item_history"><a href="#">История платежей</a></li>
+        <li class="menu__item menu__item_tools"><a href="#">Настройки</a></li>
+        <li class="menu__item menu__item_exit"><a href="#">Выход</a></li>
+      </ul>
+    </div> <!-- menu конец левого блока с меню-->
+    <div class="main"> <!-- основная часть-->
+      <div class="main__data"> <!-- центральная часть для ввода данных, без footer'а-->
+        <h3>Информация по оплате</h3>
+        <h3>Номер счета:</h3>
+        <h4 id="accountNumber">55555555555555</h4>
+        <h3>Сумма платежа:</h3>
+        <h4 id="amountPayment">100 руб.</h4>
+        <h1>Данные банковской карты</h1>
+        <form action=""> <!--форма для ввода данных-->
+          <div class="main__data_allData"> <!--левая часть вводимых данных (без cvv кода)-->
+            <h3>Номер карты</h3>
+            <input type="text" class="main__data_allData_cardNumber main__data_allData_cardNumber_1">
+            <input type="text" class="main__data_allData_cardNumber main__data_allData_cardNumber_2">
+            <input type="text" class="main__data_allData_cardNumber main__data_allData_cardNumber_3">
+            <input type="text" class="main__data_allData_cardNumber main__data_allData_cardNumber_4">
+            <h3>Срок действия</h3>
+            <select name="" id="">
+              <option value="">01</option>
+              <option value="">02</option>
+              <option value="">03</option>
+              <option value="">04</option>
+              <option value="">05</option>
+              <option value="">06</option>
+              <option value="">07</option>
+              <option value="">08</option>
+              <option value="">09</option>
+              <option value="">10</option>
+              <option value="">11</option>
+              <option value="">12</option>
+            </select>
+            <select name="" id="">
+              <option value="">2019</option>
+              <option value="">2020</option>
+              <option value="">2021</option>
+              <option value="">2022</option>
+              <option value="">2023</option>
+              <option value="">2024</option>
+            </select>
+            <input type="text" placeholder="Держатель карты" class="main__data_allData_cardHolder">
+          </div> <!--main__data_allData конец левой части вводимых данных-->
+          <div class="main__data_CVVcode"> <!--cvv часть-->
+            <div class="main__data_CVVcode_line"></div>
+            <h3>Код CVV2 / CVC2</h3>
+            <input type="text" class="main__data_CVVcode_number">
+            <div class="main__data_CVVcode_help">?</div>
+          </div> <!--main__data_CVVcode конец cvv части-->
+          <input type="submit">
+        </form> <!--конец формы для ввода данных-->
+      </div> <!--main__data конец основной части вводимых данных-->
+      <div class="main__footer"> <!--нижняя "информационная" часть-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam facilis cumque odio temporibus, numquam error accusamus quos, rerum! Officia, doloribus! Officia, doloribus.</p>
+        <p>Dolor odit assumenda, molestiae perspiciatis eaque recusandae officia animi.?</p>
+        <p>Itaque, repellat asperiores quidem iste, beatae dicta rem et voluptates.</p>
+        <p>Culpa quas, sequi accusamus officiis id ullam reiciendis, sed, laborum ducimus esse facere libero alias sit numquam aperiam dicta ex, laborum ducimus esse facere libero alias sit numquam aperiam dicta ex! laborum ducimus esse facere libero alias ducimus esse facere libero alias sit numquam aperiam dicta ex! Lorem impus</p>
+      </div> <!--main__footer конец "информационной" части-->
+    </div> <!-- main конец основной части-->
+  </div> <!--container-->
+</body>
+
+</html>
+<!--  .container>(.menu>ul>(li.menu__item.menu__item_$>lorem1)*5)+(.main>(.main__data>(h3>lorem2)*3+(h1>lorem3)+form>(.main__data_allData>(h3{Номер карты})+(input.main__data_allData_cardNumber)*4+(h3{Срок действия})+(select>option{0$}*12)+(select>option{2019}*5)+(input[placeholder=Держателькарты].main__data_allData_cardHolder))+(.main__data_CVVcode>(.main__data_CVVcode_line)+(h3{Код CVV2 / CVC2})+(input.main__data_CVVcode_number)+.main__data_CVVcode_help{?})+input[type=submit])+(.main__footer>(p>lorem20)*4))-->
