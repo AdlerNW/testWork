@@ -53,11 +53,11 @@ $bgColorFooter: #373c43;
   color: $textColorMenu;
 }
 
-.menu__item_payment {
+.menu__item_active {
   background: $bgColorMenuOnClick;
 }
 
-.menu__item_payment a, .menu__item_exit a {
+.menu__item_active a, .menu__item_exit a {
   color: $textColorMenuOnClickAndExit;
 }
 /* конец: Левая часть страницы, меню*/
@@ -70,6 +70,10 @@ $bgColorFooter: #373c43;
 .main__data {
   background: $bgColorMain;
   height: 570px;
+}
+
+.main__cardNumber_error {
+  /*код, если рамку надо подсветить красным!*/
 }
 /* конец: основная часть*/
 /*footer*/
