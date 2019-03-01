@@ -25,14 +25,14 @@
         <h3 class="main__amountPayment">Сумма платежа:</h3>
         <h4 data-price>100 руб.</h4> <!--document.querySelectorAll('[data-price]'); -->
         <h1>Данные банковской карты</h1>
-        <form action=""> <!--форма для ввода данных-->
-          <div class="main__allData"> <!--левая часть вводимых данных (без cvv кода)-->
-            <h3>Номер карты</h3>
-            <input type="text" class="main__cardNumber">
-            <input type="text" class="main__cardNumber">
-            <input type="text" class="main__cardNumber">
-            <input type="text" class="main__cardNumber">
-            <h3>Срок действия</h3>
+        <form class="form" action=""> <!--форма для ввода данных-->
+          <div class="form__allData"> <!--левая часть вводимых данных (без cvv кода)-->
+            <h3 class="form__cardNumberH3">Номер карты</h3>
+            <input type="text" class="form__cardNumber">
+            <input type="text" class="form__cardNumber">
+            <input type="text" class="form__cardNumber">
+            <input type="text" class="form__cardNumber">
+            <h3 class="form__validityPeriod">Срок действия</h3>
             <select name="" id="">
               <option value="">01</option>
               <option value="">02</option>
@@ -55,13 +55,13 @@
               <option value="">2023</option>
               <option value="">2024</option>
             </select>
-            <input type="text" placeholder="Держатель карты" class="main__cardHolder">
+            <input type="text" placeholder="Держатель карты" class="form__cardHolder">
           </div> <!--main__data_allData конец левой части вводимых данных-->
-          <div class="main__CVVcode"> <!--cvv часть-->
-            <div class="main__line"></div>
+          <div class="form__CVVcode"> <!--cvv часть-->
+            <div class="form__line"></div>
             <h3>Код CVV2 / CVC2</h3>
-            <input type="text" class="main__CVVnumber">
-            <div class="main__helpOnCVV">?</div>
+            <input type="text" class="form__CVVnumber">
+            <div class="form__helpOnCVV">?</div>
           </div> <!--main__data_CVVcode конец cvv части-->
           <input type="submit">
         </form> <!--конец формы для ввода данных-->

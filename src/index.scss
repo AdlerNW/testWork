@@ -7,6 +7,7 @@ $bgColorFooter: #373c43;
 $textColorH1: #383d43;
 $textColorH3: #8494ab;
 $textColorH4: #373c43;
+$colorLineAndBorderCard: #e4e9ee;
 
 @font-face {
   font-family: 'OpenSans';
@@ -42,7 +43,7 @@ body {
   width: 320px;
   height: 380px;
   font-family: "OpenSans";
-  font-size: 24px;
+  font-size: 19px;
 }
 
 .menu ul {
@@ -81,7 +82,7 @@ body {
 }
 
 .main h1{
-  font: normal 28px "OpenSans";
+  font: normal 22px "OpenSans";
   color: $textColorH1;
   margin: 5px 0 25px 0;
 }
@@ -109,8 +110,25 @@ body {
   display: inline-block;
   width: 50%;
 }
+.form {
+  position: relative;
+}
 
-.main__cardNumber_error {
+.form__allData, .form__CVVcode{
+  background: pink;
+  height: 235px;
+  width: 350px;
+  border: 1px solid $colorLineAndBorderCard;
+  border-radius: 7px;
+}
+
+.form__CVVcode{
+  position: absolute;
+  top: 20px;
+  left: 194px;
+}
+
+.form__cardNumber_error {
   /*код, если рамку надо подсветить красным!*/
 }
 /* конец: основная часть*/
