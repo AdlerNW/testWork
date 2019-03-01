@@ -13,7 +13,6 @@ $colorLineAndBorderCard: #e4e9ee;
   font-family: 'OpenSans';
   src: local("OpenSans"),
     url('./fonts/OpenSans-Bold.ttf') format('truetype');
-
 }
 
 * {
@@ -115,11 +114,75 @@ body {
 }
 
 .form__allData, .form__CVVcode{
-  background: pink;
+  background: $bgColorMain;
   height: 235px;
   width: 350px;
   border: 1px solid $colorLineAndBorderCard;
   border-radius: 7px;
+}
+
+.form__allData {
+  padding: 13px 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.form__cardNumberH3{
+  margin: 11px 0 9px 0;
+}
+
+.form__cardNumber {
+  height: 40px;
+  width: 63px;
+  border: 1px solid $colorLineAndBorderCard;
+  margin-right: 9px;
+}
+
+.form__validityPeriod {
+  margin: 15px 0 5px 0;
+}
+
+.supportForMonth {
+  //background: #fff url(https://www.motech.cz/bmz_cache/3/300553cc8005cb8a59b2e8f47d84ee9f.image.14x40.jpg) no-repeat 46px 0;
+  width: 70px;
+  overflow: hidden;
+  border: 1px solid $colorLineAndBorderCard;
+  float: left;
+  margin-right: 10px;
+}
+
+#month{
+  height: 40px;
+  width: 85px;
+  background: transparent;
+  border: 0;
+  font: normal 18px Arial;
+  padding-left: 12px;
+}
+
+.supportForYear{
+  //background: #fff url(https://www.motech.cz/bmz_cache/3/300553cc8005cb8a59b2e8f47d84ee9f.image.14x40.jpg) no-repeat 60px 0;
+  width: 84px;
+  overflow: hidden;
+  border: 1px solid $colorLineAndBorderCard;
+}
+
+#year{
+  height: 40px;
+  width: 100px;
+  background: transparent;
+  border: 0;
+  font: normal 18px Arial;
+  padding-left: 10px;
+}
+
+.form__cardHolder {
+  margin-top: 10px;
+  height: 40px;
+  width: 317px;
+  font: normal 18px Arial;
+  padding: 10px;
+  border: 1px solid $colorLineAndBorderCard;
 }
 
 .form__CVVcode{
