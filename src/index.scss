@@ -77,7 +77,7 @@ body {
 .main__data {
   background: $bgColorMain;
   height: 570px;
-  padding: 50px 26px 29px 29px;
+  padding: 45px 26px 29px 29px;
 }
 
 .main h1{
@@ -86,15 +86,29 @@ body {
 }
 
 .main h3, .main h4{
-  font: normal 22px Arial;
+  font: normal 18px Arial;
 }
 
 .main h3{
   color: $textColorH3;
+  background: #fce;
+}
+
+.main__data .main__information{
+  margin-bottom: 20px;
+}
+
+.main__data .main__accountNumber, .main__data .main__amountPayment{
+  display: inline-block;
+  width: 33%;
+  margin-bottom: 10px;
 }
 
 .main h4{
   color: $textColorH4;
+  background: #fc3;
+  display: inline-block;
+  width: 50%;
 }
 
 .main__cardNumber_error {
