@@ -81,8 +81,9 @@ body {
 }
 
 .main h1{
-  font: normal 29px "OpenSans";
+  font: normal 28px "OpenSans";
   color: $textColorH1;
+  margin: 5px 0 25px 0;
 }
 
 .main h3, .main h4{
@@ -91,7 +92,6 @@ body {
 
 .main h3{
   color: $textColorH3;
-  background: #fce;
 }
 
 .main__data .main__information{
@@ -100,13 +100,12 @@ body {
 
 .main__data .main__accountNumber, .main__data .main__amountPayment{
   display: inline-block;
-  width: 33%;
+  width: 29%;
   margin-bottom: 10px;
 }
 
 .main h4{
   color: $textColorH4;
-  background: #fc3;
   display: inline-block;
   width: 50%;
 }
