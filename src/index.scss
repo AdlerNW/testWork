@@ -259,3 +259,108 @@ body {
   margin: 10px 10px;
 }
 /*конец: footer*/
+@media screen and (max-width: 999px) and (min-width: 720px){
+  .container {
+    width: 720px;
+  }
+  .menu {
+    margin-left: 10px;
+    width: 230px;
+    height: 285px;
+    font-size: 14px;
+  }
+
+  .menu__item{
+    height: 57px;
+    line-height: 57px;
+  }
+
+  .main {
+    width: 470px;
+    margin-right: 10px;
+  }
+  
+  .main__data {
+    background: $bgColorMain;
+    height: 410px;
+    padding: 22px 13px 14px 14px;
+  }
+
+  .main h1{
+    font-size: 20px;
+  }
+  
+  .form__allData, .form__CVVcode{
+    height: 180px;
+    width: 290px;
+  }
+  
+  .form__allData {
+    padding: 6px 8px;
+  }
+  
+  .form__cardNumber {
+    height: 38px;
+    width: 62px;
+    margin-right: 3px;
+    padding: 13px 10px;
+  }
+
+  .form__validityPeriod {
+    float: left;
+  }
+  
+  .supportForMonth {
+    background: #fff url(./img/down.png) no-repeat 36px 0;
+    width: 60px;
+    float: left;
+    margin: 5px 5px 0 3px;
+  }
+  
+  #month{
+    width: 71px;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  
+  .supportForYear{
+    background: #fff url(./img/down.png) no-repeat 56px 0;
+    width: 80px;
+    margin-top: 5px;
+  }
+  
+  #year{
+    width: 91px;
+    font-size: 16px;
+    padding-left: 5px;
+  }
+  
+  .form__cardHolder {
+    width: 250px;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .form__CVVcode{
+    left: 150px;
+  }
+  
+  .form__CVVH3 {
+    margin: 18px 7px 0 0;
+  }
+  
+  .form__CVVnumber {
+    margin-left: 160px;
+    width: 120px;
+    padding: 14px 50px 14px 0;
+  }
+  
+  .form__helpOnCVV {
+    left: 245px;
+  }
+  
+  .form__btnSubmit{
+    margin: 10px 0 0 10px;
+    width: 120px;
+  }
+}
