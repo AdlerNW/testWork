@@ -9,6 +9,7 @@ $textColorH3: #8494ab;
 $textColorH4: #373c43;
 $colorLineAndBorderCard: #e4e9ee;
 $colorHelpOnCVV: #c1c8d1;
+$bgBtnSubmit: #0059bc;
 
 @font-face {
   font-family: 'OpenSans';
@@ -137,6 +138,9 @@ body {
   width: 63px;
   border: 1px solid $colorLineAndBorderCard;
   margin-right: 9px;
+  font: normal 16px Arial;
+  padding: 14px 12px;
+  text-align: center;
 }
 
 .form__validityPeriod {
@@ -144,7 +148,7 @@ body {
 }
 
 .supportForMonth {
-  //background: #fff url(https://www.motech.cz/bmz_cache/3/300553cc8005cb8a59b2e8f47d84ee9f.image.14x40.jpg) no-repeat 46px 0;
+  background: #fff url(https://www.motech.cz/bmz_cache/3/300553cc8005cb8a59b2e8f47d84ee9f.image.14x40.jpg) no-repeat 46px 0;
   width: 70px;
   overflow: hidden;
   border: 1px solid $colorLineAndBorderCard;
@@ -162,7 +166,7 @@ body {
 }
 
 .supportForYear{
-  //background: #fff url(https://www.motech.cz/bmz_cache/3/300553cc8005cb8a59b2e8f47d84ee9f.image.14x40.jpg) no-repeat 60px 0;
+  background: #fff url(https://www.motech.cz/bmz_cache/3/300553cc8005cb8a59b2e8f47d84ee9f.image.14x40.jpg) no-repeat 60px 0;
   width: 84px;
   overflow: hidden;
   border: 1px solid $colorLineAndBorderCard;
@@ -208,6 +212,9 @@ body {
   height: 42px;
   width: 138px;
   border: 1px solid $colorLineAndBorderCard;
+  font: normal 16px Arial;
+  padding: 14px 60px 14px 0;
+  text-align: right;
 }
 
 .form__helpOnCVV {
@@ -221,6 +228,17 @@ body {
   height: 26px;
   text-align: center;
   line-height: 26px;
+}
+
+.form__btnSubmit{
+  margin: 40px 0 0 18px;
+  height: 40px;
+  width: 140px;
+  border: 0;
+  border-radius: 20px;
+  background: $bgBtnSubmit;
+  color: white;
+  font: normal 14px "OpenSans";
 }
 
 .form__cardNumber_error {

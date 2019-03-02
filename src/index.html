@@ -14,7 +14,7 @@
         <li class="menu__item menu__item_active"><a href="#">Платежи</a></li>
         <li class="menu__item"><a href="#">История платежей</a></li>
         <li class="menu__item"><a href="#">Настройки</a></li>
-        <li class="menu__item menu__item_exit"><a href="#">Выход</a></li>
+        <li class="menu__item menu__item_exit"><a href="#">Выйти</a></li>
       </ul>
     </div> <!-- menu конец левого блока с меню-->
     <div class="main"> <!-- основная часть-->
@@ -28,10 +28,10 @@
         <form class="form" action=""> <!--форма для ввода данных-->
           <div class="form__allData"> <!--левая часть вводимых данных (без cvv кода)-->
             <h3 class="form__cardNumberH3">Номер карты</h3>
-            <input type="text" class="form__cardNumber">
-            <input type="text" class="form__cardNumber">
-            <input type="text" class="form__cardNumber">
-            <input type="text" class="form__cardNumber">
+            <input type="text" class="form__cardNumber" maxlength="4" placeholder="0000">
+            <input type="text" class="form__cardNumber" maxlength="4" placeholder="0000">
+            <input type="text" class="form__cardNumber" maxlength="4" placeholder="0000">
+            <input type="text" class="form__cardNumber" maxlength="4" placeholder="0000">
             <h3 class="form__validityPeriod">Срок действия</h3>
             <div class="supportForMonth"> 
               <select name="month" id="month">
@@ -64,10 +64,10 @@
           <div class="form__CVVcode"> <!--cvv часть-->
             <div class="form__line"></div>
             <h3 class="form__CVVH3">Код CVV2 / CVC2</h3>
-            <input type="text" class="form__CVVnumber">
+            <input type="text" class="form__CVVnumber" maxlength="3">
             <div class="form__helpOnCVV">?</div>
           </div> <!--main__data_CVVcode конец cvv части-->
-          <input type="submit">
+          <input type="submit" class="form__btnSubmit" value="Оплатить">
         </form> <!--конец формы для ввода данных-->
       </div> <!--main__data конец основной части вводимых данных-->
       <div class="main__footer"> <!--нижняя "информационная" часть-->
