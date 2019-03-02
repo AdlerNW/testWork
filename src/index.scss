@@ -364,3 +364,133 @@ body {
     width: 120px;
   }
 }
+
+@media screen and (max-width: 719px) and (min-width: 320px) {
+  body {
+    padding: 30px 0 10px 0;
+  }
+  
+  .container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .menu {
+    margin: 10px auto;
+    max-width: 700px;
+    height: auto;
+  }
+  
+  .menu__item {
+    padding-left: 20px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .main {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .main__data {
+    height: auto;
+    padding: 10px;
+  }
+  
+  .main h1{
+    font: normal 20px "OpenSans";
+    margin: 5px 0 10px 0;
+  }
+  
+  .main__data .main__accountNumber, .main__data .main__amountPayment{
+    display: block;
+    width: 50%;
+    margin-bottom: 5px;
+  }
+  
+  .main h4{
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .form__allData, .form__CVVcode{
+    height: auto;
+    width: 100%;
+    border: 0;
+  }
+  
+  .form__allData {
+    padding: 6px 8px;
+  }
+  
+  .form__cardNumber {
+    height: 42px;
+    width: 22%;
+    margin-right: 3px;
+    font-size: 14px;
+  }
+  
+  .supportForMonth {
+    background: #fff url(./img/down.png) no-repeat right;
+    width: 30%;
+    max-width: 100px;
+  }
+  
+  #month{
+    width: 112%;
+  }
+  
+  .supportForYear{
+    background: #fff url(./img/down.png) no-repeat right;
+    width: 40%;
+    max-width: 150px;
+  }
+  
+  #year{
+    width: 112%;
+  }
+  
+  .form__cardHolder {
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .form__CVVcode{
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  .form__line{
+    display: none;
+  }
+  
+  .form__CVVH3 {
+    text-align: left; 
+    margin: 15px 0 10px 10px;
+  }
+  
+  .form__CVVnumber {
+    margin-left: 9px;
+    height: 42px;
+    width: 30%;
+    max-width: 180px;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .form__helpOnCVV {
+    display: none;
+  }
+  
+  .form__btnSubmit{
+    margin: 20px 0 0 40px;
+    width: 140px;
+  }
+}
