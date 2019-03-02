@@ -259,6 +259,7 @@ body {
   margin: 10px 10px;
 }
 /*конец: footer*/
+/*работа в диапазоне 720-1000px*/
 @media screen and (max-width: 999px) and (min-width: 720px){
   .container {
     width: 720px;
@@ -364,7 +365,8 @@ body {
     width: 120px;
   }
 }
-
+/*конец: работа в диапазоне 720-1000px*/
+/*работа в диапазоне 320-720px*/
 @media screen and (max-width: 719px) and (min-width: 320px) {
   body {
     padding: 30px 0 10px 0;
@@ -494,3 +496,4 @@ body {
     width: 140px;
   }
 }
+/*конец: работа в диапазоне 320-720px*/
