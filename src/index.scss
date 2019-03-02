@@ -8,6 +8,7 @@ $textColorH1: #383d43;
 $textColorH3: #8494ab;
 $textColorH4: #373c43;
 $colorLineAndBorderCard: #e4e9ee;
+$colorHelpOnCVV: #c1c8d1;
 
 @font-face {
   font-family: 'OpenSans';
@@ -87,7 +88,7 @@ body {
 }
 
 .main h3, .main h4{
-  font: normal 18px Arial;
+  font: normal 16px Arial;
 }
 
 .main h3{
@@ -128,11 +129,11 @@ body {
 }
 
 .form__cardNumberH3{
-  margin: 11px 0 9px 0;
+  margin: 6px 0 5px 0;
 }
 
 .form__cardNumber {
-  height: 40px;
+  height: 42px;
   width: 63px;
   border: 1px solid $colorLineAndBorderCard;
   margin-right: 9px;
@@ -189,6 +190,37 @@ body {
   position: absolute;
   top: 20px;
   left: 194px;
+}
+
+.form__line{
+  height: 42px;
+  background: $colorLineAndBorderCard;
+  margin-top: 25px;
+}
+
+.form__CVVH3 {
+  text-align: right; 
+  margin: 18px 24px 0 0;
+}
+
+.form__CVVnumber {
+  margin-left: 193px;
+  height: 42px;
+  width: 138px;
+  border: 1px solid $colorLineAndBorderCard;
+}
+
+.form__helpOnCVV {
+  position: absolute;
+  left: 296px;
+  top: 112px;
+  color: $colorHelpOnCVV;
+  border: 1px solid $colorHelpOnCVV;
+  border-radius: 26px;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
 }
 
 .form__cardNumber_error {
