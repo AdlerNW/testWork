@@ -27,18 +27,27 @@ window.onload = function(){
 function checkInputs(e){
     e.preventDefault();
     testResult = true;
+    CVVnumber.className = 'form__CVVnumber';
+    for (let i = 0; i < cardNumbers.length; i++){
+        cardNumbers[i].className = 'form__cardNumber';
+    }
+    cardHolder.className = 'form__cardHolder';
+
     if (regExpNotNumber.test(CVVnumber.value) || !regExpThreeNamber.test(CVVnumber.value) || (CVVnumber.value == '000')){
         testResult = false;
+        CVVnumber.className = 'form__CVVnumber form_error';
     } 
 
     for (let i = 0; i < cardNumbers.length; i++){
         if (regExpNotNumber.test(cardNumbers[i].value) || !regExpFourNamber.test(cardNumbers[i].value) || (cardNumbers[i].value == '0000')){
             testResult = false;
+            cardNumbers[i].className = 'form__cardNumber form_error';
         }
     }
 
     if (regExpForCardholderNaN.test(cardHolder.value) || !regExpForCardholderMin.test(cardHolder.value)){
         testResult = false;
+        cardHolder.className = 'form__cardHolder form_error';
     }
     if (testResult){
         form.submit();
