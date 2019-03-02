@@ -241,8 +241,8 @@ body {
   font: normal 14px "OpenSans";
 }
 
-.form__cardNumber_error {
-  /*код, если рамку надо подсветить красным!*/
+.form_error {
+  border: 1px solid red;
 }
 /* конец: основная часть*/
 /*footer*/
