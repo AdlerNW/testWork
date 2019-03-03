@@ -17,11 +17,6 @@ window.onload = function(){
     btnSubmit = document.querySelector("button.form__btnSubmit");
     form = document.querySelector("form.form");
     btnSubmit.addEventListener('click', checkInputs);
-    console.log(cardNumbers);
-    console.log(cardHolder);
-    console.log(CVVnumber);
-    console.log(btnSubmit);
-    console.log(form);
 }
 
 function checkInputs(e){
