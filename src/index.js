@@ -5,11 +5,10 @@ let cardNumbers = null,
     btnSubmit = null,
     form = null,
     testResult = true,
-    regExpNotNumber = /\D/,
     regExpFourNamber = /\d{4}/,
     regExpThreeNamber = /\d{3}/,
-    regExpForCardholderNaN = /[^A-Za-z]/,
-    regExpForCardholderMin = /[A-Za-z]{4,}/;
+    regExpForCardholderNaN = /[^a-z\s]/i,
+    regExpForCardholderMin = /[a-z\s]{4,}/i;
 window.onload = function(){
     cardNumbers = document.querySelectorAll("input.form__cardNumber");
     cardHolder = document.querySelector("input.form__cardHolder");
@@ -28,13 +27,13 @@ function checkInputs(e){
     }
     cardHolder.className = 'form__cardHolder';
 
-    if (regExpNotNumber.test(CVVnumber.value) || !regExpThreeNamber.test(CVVnumber.value) || (CVVnumber.value == '000')){
+    if (!regExpThreeNamber.test(CVVnumber.value) || (CVVnumber.value == '000')){
         testResult = false;
         CVVnumber.className = 'form__CVVnumber form_error';
     } 
 
     for (let i = 0; i < cardNumbers.length; i++){
-        if (regExpNotNumber.test(cardNumbers[i].value) || !regExpFourNamber.test(cardNumbers[i].value) || (cardNumbers[i].value == '0000')){
+        if (!regExpFourNamber.test(cardNumbers[i].value) || (cardNumbers[i].value == '0000')){
             testResult = false;
             cardNumbers[i].className = 'form__cardNumber form_error';
         }
@@ -48,5 +47,3 @@ function checkInputs(e){
         form.submit();
     }
 }
-
-// ну баттон повесить проверку (сделай для этого ф-ю!), если проверка тру, то форм.сабмит()
