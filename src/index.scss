@@ -45,106 +45,195 @@ body {
   height: 380px;
   font-family: "OpenSans";
   font-size: 19px;
+
+  & ul {
+    list-style-type: none;
+  }
+
+  &__item {
+    padding-left: 20px;
+    height: 76px;
+    line-height: 76px;
+
+    &_exit a{
+      color: $textColorMenuOnClickAndExit;
+    }
+
+    & a {
+      text-decoration: none;
+      color: $textColorMenu;
+    }
+
+    &_active {
+      background: $bgColorMenuOnClick;
+
+      & a{
+        color: $textColorMenuOnClickAndExit;
+      }
+    }
+  }
 }
 
-.menu ul {
-  list-style-type: none;
-}
-
-.menu__item {
-  padding-left: 20px;
-  height: 76px;
-  line-height: 76px;
-}
-
-.menu__item a {
-  text-decoration: none;
-  color: $textColorMenu;
-}
-
-.menu__item_active {
-  background: $bgColorMenuOnClick;
-}
-
-.menu__item_active a, .menu__item_exit a {
-  color: $textColorMenuOnClickAndExit;
-}
 /* конец: Левая часть страницы, меню*/
 /* основная часть*/
 .main {
   width: 640px;
   margin-right: 20px;
+
+  &__data {
+    background: $bgColorMain;
+    height: 570px;
+    padding: 45px 26px 29px 29px;
+
+    & .main__information{
+      margin-bottom: 20px;
+    }
+
+    & .main__accountNumber, & .main__amountPayment{
+      display: inline-block;
+      width: 29%;
+      margin-bottom: 10px;
+    }
+  }
+
+  & h1{
+    font: normal 22px "OpenSans";
+    color: $textColorH1;
+    margin: 5px 0 25px 0;
+  }
+
+  & h3, & h4{
+    font: normal 16px Arial;
+  }
+
+  & h3{
+    color: $textColorH3;
+  }
+
+  & h4{
+    color: $textColorH4;
+    display: inline-block;
+    width: 50%;
+  }
 }
 
-.main__data {
-  background: $bgColorMain;
-  height: 570px;
-  padding: 45px 26px 29px 29px;
-}
-
-.main h1{
-  font: normal 22px "OpenSans";
-  color: $textColorH1;
-  margin: 5px 0 25px 0;
-}
-
-.main h3, .main h4{
-  font: normal 16px Arial;
-}
-
-.main h3{
-  color: $textColorH3;
-}
-
-.main__data .main__information{
-  margin-bottom: 20px;
-}
-
-.main__data .main__accountNumber, .main__data .main__amountPayment{
-  display: inline-block;
-  width: 29%;
-  margin-bottom: 10px;
-}
-
-.main h4{
-  color: $textColorH4;
-  display: inline-block;
-  width: 50%;
-}
 .form {
   position: relative;
-}
 
-.form__allData, .form__CVVcode{
-  background: $bgColorMain;
-  height: 235px;
-  width: 350px;
-  border: 1px solid $colorLineAndBorderCard;
-  border-radius: 7px;
-}
+  &__allData, &__CVVcode{
+    background: $bgColorMain;
+    height: 235px;
+    width: 350px;
+    border: 1px solid $colorLineAndBorderCard;
+    border-radius: 7px;
+  }
 
-.form__allData {
-  padding: 13px 15px;
-  position: relative;
-  z-index: 1;
-}
+  &__allData {
+    padding: 13px 15px;
+    position: relative;
+    z-index: 1;
+  }
 
-.form__cardNumberH3{
-  margin: 6px 0 5px 0;
-}
+  &__cardNumberH3{
+    margin: 6px 0 5px 0;
+  }
 
-.form__cardNumber {
-  height: 42px;
-  width: 63px;
-  border: 1px solid $colorLineAndBorderCard;
-  margin-right: 9px;
-  font: normal 16px Arial;
-  padding: 14px 12px;
-  text-align: center;
-}
+  &__cardNumber {
+    height: 42px;
+    width: 63px;
+    border: 1px solid $colorLineAndBorderCard;
+    margin-right: 9px;
+    font: normal 16px Arial;
+    padding: 14px 12px;
+    text-align: center;
+  }
 
-.form__validityPeriod {
-  margin: 15px 0 5px 0;
+  &__validityPeriod {
+    margin: 15px 0 5px 0;
+  }
+
+  &__cardHolder {
+    margin-top: 10px;
+    height: 40px;
+    width: 317px;
+    font: normal 18px Arial;
+    padding: 10px;
+    border: 1px solid $colorLineAndBorderCard;
+  }
+
+  &__CVVcode{
+    position: absolute;
+    top: 20px;
+    left: 194px;
+  }
+  
+  &__line{
+    height: 42px;
+    background: $colorLineAndBorderCard;
+    margin-top: 25px;
+  }
+  
+  &__CVVH3 {
+    text-align: right; 
+    margin: 18px 24px 0 0;
+  }
+  
+  &__CVVnumber {
+    margin-left: 193px;
+    height: 42px;
+    width: 138px;
+    border: 1px solid $colorLineAndBorderCard;
+    font: normal 16px Arial;
+    padding: 14px 60px 14px 0;
+    text-align: right;
+  }
+  
+  &__helpOnCVV {
+    position: absolute;
+    left: 296px;
+    top: 112px;
+    color: $colorHelpOnCVV;
+    border: 1px solid $colorHelpOnCVV;
+    border-radius: 26px;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+  }
+  
+  &__btnSubmit{
+    margin: 40px 0 0 18px;
+    height: 40px;
+    width: 140px;
+    border: 0;
+    border-radius: 20px;
+    background: $bgBtnSubmit;
+    color: white;
+    font: normal 14px "OpenSans";
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+  &_error {
+    border: 1px solid red;
+  }
+
+  /*footer*/
+  &__footer {
+    background: $bgColorFooter;
+    height: auto;
+    padding: 20px;
+    font-family: Arial;
+    font-size: 16px;
+    color: #89909d;
+
+    & p {
+      margin: 10px 10px;
+    }
+  }
+  /*конец: footer*/
 }
 
 .supportForMonth {
@@ -180,119 +269,38 @@ body {
   font: normal 18px Arial;
   padding-left: 10px;
 }
-
-.form__cardHolder {
-  margin-top: 10px;
-  height: 40px;
-  width: 317px;
-  font: normal 18px Arial;
-  padding: 10px;
-  border: 1px solid $colorLineAndBorderCard;
-}
-
-.form__CVVcode{
-  position: absolute;
-  top: 20px;
-  left: 194px;
-}
-
-.form__line{
-  height: 42px;
-  background: $colorLineAndBorderCard;
-  margin-top: 25px;
-}
-
-.form__CVVH3 {
-  text-align: right; 
-  margin: 18px 24px 0 0;
-}
-
-.form__CVVnumber {
-  margin-left: 193px;
-  height: 42px;
-  width: 138px;
-  border: 1px solid $colorLineAndBorderCard;
-  font: normal 16px Arial;
-  padding: 14px 60px 14px 0;
-  text-align: right;
-}
-
-.form__helpOnCVV {
-  position: absolute;
-  left: 296px;
-  top: 112px;
-  color: $colorHelpOnCVV;
-  border: 1px solid $colorHelpOnCVV;
-  border-radius: 26px;
-  width: 26px;
-  height: 26px;
-  text-align: center;
-  line-height: 26px;
-}
-
-.form__btnSubmit{
-  margin: 40px 0 0 18px;
-  height: 40px;
-  width: 140px;
-  border: 0;
-  border-radius: 20px;
-  background: $bgBtnSubmit;
-  color: white;
-  font: normal 14px "OpenSans";
-}
-
-.form__btnSubmit:focus{
-  outline: none;
-}
-
-.form_error {
-  border: 1px solid red;
-}
 /* конец: основная часть*/
-/*footer*/
-.main__footer {
-  background: $bgColorFooter;
-  height: auto;
-  padding: 20px;
-  font-family: Arial;
-  font-size: 16px;
-  color: #89909d;
-}
-
-.main__footer p {
-  margin: 10px 10px;
-}
-/*конец: footer*/
 /*работа в диапазоне 720-1000px*/
 @media screen and (max-width: 999px) and (min-width: 720px){
   .container {
     width: 720px;
   }
+
   .menu {
     margin-left: 10px;
     width: 230px;
     height: 285px;
     font-size: 14px;
-  }
 
-  .menu__item{
-    height: 57px;
-    line-height: 57px;
+    &__item{
+      height: 57px;
+      line-height: 57px;
+    }
   }
 
   .main {
     width: 470px;
     margin-right: 10px;
-  }
-  
-  .main__data {
-    background: $bgColorMain;
-    height: 410px;
-    padding: 22px 13px 14px 14px;
-  }
 
-  .main h1{
-    font-size: 20px;
+    &__data {
+      background: $bgColorMain;
+      height: 410px;
+      padding: 22px 13px 14px 14px;
+    }
+  
+    & h1{
+      font-size: 20px;
+    }
   }
   
   .form__allData, .form__CVVcode{
@@ -377,13 +385,7 @@ body {
   }
   
   .container {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
     width: 100%;
-    margin: auto;
     flex-direction: column;
   }
 
@@ -391,38 +393,38 @@ body {
     margin: 10px auto;
     max-width: 700px;
     height: auto;
+
+    &__item {
+      padding-left: 20px;
+      height: 50px;
+      line-height: 50px;
+    }
   }
   
-  .menu__item {
-    padding-left: 20px;
-    height: 50px;
-    line-height: 50px;
-  }
-
   .main {
     width: 100%;
     margin: 0;
-  }
-  
-  .main__data {
-    height: auto;
-    padding: 10px;
-  }
-  
-  .main h1{
-    font: normal 20px "OpenSans";
-    margin: 5px 0 10px 0;
-  }
-  
-  .main__data .main__accountNumber, .main__data .main__amountPayment{
-    display: block;
-    width: 50%;
-    margin-bottom: 5px;
-  }
-  
-  .main h4{
-    display: block;
-    margin-bottom: 15px;
+
+    &__data {
+      height: auto;
+      padding: 10px;
+
+      & .main__accountNumber, & .main__amountPayment{
+        display: block;
+        width: 50%;
+        margin-bottom: 5px;
+      }
+    }
+    
+    & h1{
+      font: normal 20px "OpenSans";
+      margin: 5px 0 10px 0;
+    }
+
+    & h4{
+      display: block;
+      margin-bottom: 15px;
+    }
   }
   
   .form__allData, .form__CVVcode{
