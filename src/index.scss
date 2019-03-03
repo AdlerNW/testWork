@@ -115,6 +115,20 @@ body {
     display: inline-block;
     width: 50%;
   }
+  /*footer*/
+  &__footer {
+    background: $bgColorFooter;
+    height: auto;
+    padding: 20px;
+    font-family: Arial;
+    font-size: 16px;
+    color: #89909d;
+
+    & p {
+      margin: 10px 10px;
+    }
+  }
+  /*конец: footer*/
 }
 
 .form {
@@ -219,21 +233,6 @@ body {
   &_error {
     border: 1px solid red;
   }
-
-  /*footer*/
-  &__footer {
-    background: $bgColorFooter;
-    height: auto;
-    padding: 20px;
-    font-family: Arial;
-    font-size: 16px;
-    color: #89909d;
-
-    & p {
-      margin: 10px 10px;
-    }
-  }
-  /*конец: footer*/
 }
 
 .supportForMonth {
@@ -451,7 +450,7 @@ body {
   }
   
   #month{
-    width: 112%;
+    width: 114%;
   }
   
   .supportForYear{
