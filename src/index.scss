@@ -241,6 +241,10 @@ body {
   font: normal 14px "OpenSans";
 }
 
+.form__btnSubmit:focus{
+  outline: none;
+}
+
 .form_error {
   border: 1px solid red;
 }
