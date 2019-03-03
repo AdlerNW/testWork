@@ -9,7 +9,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
 },
       {
-        test: /\.ttf|\.png$/,
+        test: /\.ttf|\.svg|\.png$/,
         use: "file-loader"
 }
 ]
